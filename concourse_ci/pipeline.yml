@@ -33,7 +33,6 @@ resources:
 jobs:
   - name: test
     public: true
-
     plan:
       - get: spring-boot-service
         trigger: true
