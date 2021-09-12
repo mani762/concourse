@@ -9,10 +9,10 @@ resources:
   - name: spring-boot-service
     type: git
     source:
-      uri: ((github-url))
+      uri: https://github.com/Prasad459/concourse.git
       branch: master
-      username: ((username))
-      password: ((access-token))
+      username: prasad459
+      password: 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
 
   - name: spring-boot-service-docker-repository
     type: docker-image
