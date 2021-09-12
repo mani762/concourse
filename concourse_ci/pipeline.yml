@@ -9,10 +9,10 @@ resources:
   - name: spring-boot-service
     type: git
     source:
-      uri: https://github.com/Prasad459/concourse-cicd.git
+      uri: ((github-url))
       branch: master
-      username: prasad459
-      password: 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
+      username: ((username))
+      password: ((access-token))
 
   - name: spring-boot-service-docker-repository
     type: docker-image

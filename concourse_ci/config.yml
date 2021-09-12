@@ -1,3 +1,9 @@
+# Git
+github-url: https://github.com/Prasad459/concourse-cicd.git
+username: prasad459
+access-token: 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
+
+
 # Docker
 docker-hub-email: <<DOCKER HUB EMAIL>>
 docker-hub-username: <<DOCKER USERNAME>>
