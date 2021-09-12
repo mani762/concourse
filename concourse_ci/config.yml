@@ -5,12 +5,12 @@ access-token: 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
 
 
 # Docker
-docker-hub-email: <<DOCKER HUB EMAIL>>
-docker-hub-username: <<DOCKER USERNAME>>
-docker-hub-password: <<DOCKER PASSWORD>>
-docker-hub-repo-name: <<DOCKER REPO NAME>>
+docker-hub-email: veginatiprasad@gmail.com
+docker-hub-username: prasad459
+docker-hub-password: Madurai@459
+docker-hub-repo-name: prasad459/concourse
 
-# Kubernetes
+#  Kubernetes
 server: <<API SERVER URI>>
 namespace: <<NAMESPACE>>
 cad: <<CERT AUTH DATA>>
