@@ -8,4 +8,4 @@ docker-hub-repo-name: <<DOCKER REPO NAME>>
 server: <<API SERVER URI>>
 namespace: <<NAMESPACE>>
 cad: <<CERT AUTH DATA>>
-token: <<K8 TOKEN>>
+token: <<K8s TOKEN>>

@@ -52,7 +52,7 @@ then save the file on local, Don't push it to the repository and you can also us
 - Run the Docker Compose File
 
         `docker-compose up -d`
-- Download the fy CLI tool from the localhost:8080
+- Download the fly CLI tool from the localhost:8080
 
 - Give execute permission to the fly CLI
 
@@ -62,10 +62,10 @@ then save the file on local, Don't push it to the repository and you can also us
         `sudo cp fly /usr/bin/`
 - Login to the concourse
 
-        `fly -t tutorial login -c http://localhost:8080 -u test -p test`
+        `fly -t ci login -c http://localhost:8080 -u test -p test`
 - Clone the following spring boot project
 
-        `git clone https://github.com/azmathasan92/concourse-ci-cd.git`
+        `git clone https://github.com/prasad459/concourse-ci-cd.git`
 - Change to the root dir of the project
 
         `cd concourse-ci-cd`
