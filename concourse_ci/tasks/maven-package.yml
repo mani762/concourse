@@ -18,6 +18,6 @@ run:
     - clean
     - package
     
-#outputs:
-#  - name: spring-boot-service-out
+outputs:
+  - name: spring-boot-service-out
 #    path: spring-boot-service
