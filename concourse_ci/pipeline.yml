@@ -12,7 +12,7 @@ resources:
       uri: https://github.com/Prasad459/concourse.git
       branch: master
       username: prasad459
-      password: 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
+      password: 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
 
   - name: spring-boot-service-docker-repository
     type: docker-image
@@ -45,13 +45,12 @@ jobs:
     plan:
       - get: spring-boot-service
         trigger: true
-        passed: 
-          - test
-      - file: "spring-boot-service/concourse_ci/tasks/maven-package.yml"
-        task: mvn-package
-      - params:
+        passed: [test]
+      - task: mvn-package
+        file: "spring-boot-service/concourse_ci/tasks/maven-package.yml"
+      - put: spring-boot-service-docker-repository
+        params:
           build: spring-boot-service-out
-        put: spring-boot-service-docker-repository
 
   - name: deploy
     public: true
