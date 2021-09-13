@@ -50,7 +50,7 @@ jobs:
         file: "spring-boot-service/concourse_ci/tasks/maven-package.yml"
       - put: spring-boot-service-docker-repository
         params:
-          build: spring-boot-service
+          build: spring-boot-service-out
 
   - name: deploy
     public: true
