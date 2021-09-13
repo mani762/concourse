@@ -45,12 +45,13 @@ jobs:
     plan:
       - get: spring-boot-service
         trigger: true
-        passed: [test]
-      - task: mvn-package
-        file: "spring-boot-service/concourse_ci/tasks/maven-package.yml"
-      - put: spring-boot-service-docker-repository
-        params:
-          build: spring-boot-service
+        passed: 
+           - test
+      - file: "spring-boot-service/concourse_ci/tasks/maven-package.yml"
+        task: mvn-package
+      - params:
+          build: spring-boot-service-out
+        put: spring-boot-service-docker-repository
 
   - name: deploy
     public: true
