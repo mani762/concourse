@@ -52,7 +52,7 @@ jobs:
         params:
           build: spring-boot-service-out
           
-  - name: test
+  - name: image
     public: true
     serial: true
     plan:
