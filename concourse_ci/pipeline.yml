@@ -48,9 +48,6 @@ jobs:
         passed: [test]
       - task: mvn-package
         file: "spring-boot-service/concourse_ci/tasks/maven-package.yml"
-      - put: spring-boot-service-docker-repository
-        params:
-          build: spring-boot-service-out
           
   - name: image
     public: true
@@ -62,7 +59,6 @@ jobs:
       - put: spring-boot-service-docker-repository
         params:
           build: spring-boot-service-out
-          dockerfile: spring-boot-service/Dockerfile
 
   - name: deploy
     public: true
