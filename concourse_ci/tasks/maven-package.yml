@@ -20,4 +20,4 @@ run:
     
 outputs:
    - name: spring-boot-service-out
-     path: spring-boot-service
+#     path: spring-boot-service
