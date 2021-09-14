@@ -37,6 +37,7 @@ jobs:
       - get: spring-boot-service
         trigger: true
       - task: mvn-test
+        privileged: true
         file: "spring-boot-service/concourse_ci/tasks/maven-test.yml"
 
   - name: package
