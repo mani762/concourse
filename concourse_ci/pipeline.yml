@@ -51,6 +51,18 @@ jobs:
       - put: spring-boot-service-docker-repository
         params:
           build: spring-boot-service-out
+          
+  - name: test
+    public: true
+    serial: true
+    plan:
+      - get: spring-boot-service
+        trigger: true
+        passed: [package]
+      - put: spring-boot-service-docker-repository
+        params:
+          build: spring-boot-service-out
+          dockerfile: spring-boot-service/Dockerfile
 
   - name: deploy
     public: true
